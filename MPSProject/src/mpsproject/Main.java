@@ -5,6 +5,8 @@
 
 package mpsproject;
 
+
+
 /**
  *
  * @author Administrator
@@ -15,7 +17,12 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
 
+            int[][] matrix1 = MathUtils.ReadMatrix("mat1");
+            int[][] matrix2 = MathUtils.ReadMatrix("mat2");
+
+            int[][] resultMatrix = MathUtils.SumUp(matrix1, matrix2);
+            
+            MathUtils.PrintMatrix(resultMatrix);
+    }
 }
